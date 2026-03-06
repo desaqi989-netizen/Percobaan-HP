@@ -30,16 +30,16 @@ display:none;
 .hero{
 position:relative;
 width:100%;
-height:70vh;
+height:60vh;
 overflow:hidden;
 }
 
 .hero img{
 width:100%;
-height:220%;
+height:190%;
 object-fit:cover;
 filter:brightness(70%);
-animation:gerakHero 6s ease-in-out infinite alternate;
+animation:gerakHero 3s ease-in-out infinite alternate;
 }
 
 @keyframes gerakHero{
@@ -94,7 +94,8 @@ width:300px;
 display:flex;
 flex-direction:column;
 align-items:center;
-gap:30px;
+justify-content:center;
+gap:22px;
 }
 
 .menu a{
@@ -129,21 +130,23 @@ display:block;
 .hero-mobile{
 position:relative;
 width:100%;
-height:35vh;
+height:36vh;
 overflow:hidden;
+background:#4b3222;
 }
 
 .hero-mobile img{
 width:100%;
-height:150%;
-object-fit:cover;
+height:100%;
+object-fit:contain;
+object-position:center;
 filter:brightness(70%);
-animation:gerakHP 5s ease-in-out infinite alternate;
+animation:gerakHP 1.8s linear infinite alternate;
 }
 
 @keyframes gerakHP{
 0%{transform:translateY(0);}
-100%{transform:translateY(-120px);}
+100%{transform:translateY(-80px);}
 }
 
 .judul-box-mobile{
@@ -152,15 +155,19 @@ bottom:20px;
 left:50%;
 transform:translateX(-50%);
 background:rgba(123,79,44,0.9);
-padding:10px 20px;
+padding:12px 35px;
 border-radius:20px;
+width:260px;
 }
 
 .judul-mobile{
 font-family:'Montserrat';
-font-size:16px;
+font-size:15px;
 color:white;
 margin:0;
+text-align:justify;
+text-align-last:justify;
+letter-spacing:1px;
 }
 
 /* SLIDER */
@@ -175,7 +182,7 @@ margin-top:20px;
 .slider-track{
 display:flex;
 gap:15px;
-animation:slide 10s linear infinite;
+animation:slide 3s linear infinite;
 }
 
 .slider img{
@@ -187,8 +194,8 @@ flex-shrink:0;
 }
 
 @keyframes slide{
-from{transform:translateX(0);}
-to{transform:translateX(-50%);}
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
 }
 
 /* MENU MOBILE */
@@ -226,7 +233,7 @@ margin-top:30px;
 .slider2-track{
 display:flex;
 gap:15px;
-animation:slide2 10s linear infinite;
+animation:slide2 3s linear infinite;
 }
 
 .slider2 img{
@@ -238,8 +245,8 @@ flex-shrink:0;
 }
 
 @keyframes slide2{
-from{transform:translateX(-50%);}
-to{transform:translateX(0);}
+0%{transform:translateX(-50%);}
+100%{transform:translateX(0);}
 }
 
 }
@@ -301,8 +308,6 @@ to{transform:translateX(0);}
 </div>
 </div>
 
-<!-- SLIDER FOTO 2-7 -->
-
 <div class="slider">
 <div class="slider-track">
 
@@ -323,15 +328,11 @@ to{transform:translateX(0);}
 </div>
 </div>
 
-<!-- MENU -->
-
 <div class="menu-mobile">
 <a href="#">Home</a>
 <a href="#">Timetable</a>
 <a href="#">Subject</a>
 </div>
-
-<!-- SLIDER FOTO 8-13 -->
 
 <div class="slider2">
 <div class="slider2-track">
